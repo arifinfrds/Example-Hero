@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		92C234D420E3C1AC00BB8FC2 /* SmallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C234D320E3C1AC00BB8FC2 /* SmallCell.swift */; };
 		92C234D720E3C27500BB8FC2 /* SmallCellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C234D620E3C27500BB8FC2 /* SmallCellTableViewController.swift */; };
+		92E9DDC320E4745400E7F9C3 /* ModalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E9DDC220E4745400E7F9C3 /* ModalDetailViewController.swift */; };
+		92E9DDC520E4766D00E7F9C3 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E9DDC420E4766D00E7F9C3 /* UIImage+Extension.swift */; };
 		92F4D91F20E35FEA008CECF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4D91E20E35FEA008CECF7 /* AppDelegate.swift */; };
 		92F4D92420E35FEA008CECF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F4D92220E35FEA008CECF7 /* Main.storyboard */; };
 		92F4D92620E35FEC008CECF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F4D92520E35FEC008CECF7 /* Assets.xcassets */; };
 		92F4D92920E35FEC008CECF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F4D92720E35FEC008CECF7 /* LaunchScreen.storyboard */; };
 		92F4D93520E36272008CECF7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4D93420E36272008CECF7 /* TableViewController.swift */; };
 		92F4D93720E36DA7008CECF7 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4D93620E36DA7008CECF7 /* MyTableViewCell.swift */; };
-		92F4D93920E3757F008CECF7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4D93820E3757F008CECF7 /* DetailViewController.swift */; };
+		92F4D93920E3757F008CECF7 /* PushDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4D93820E3757F008CECF7 /* PushDetailViewController.swift */; };
 		92F4D93B20E37623008CECF7 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4D93A20E37623008CECF7 /* NavigationController.swift */; };
 		F96207C4AF2FC7DF560A3E3A /* Pods_Example_Hero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD23722121767C5AA8E3395 /* Pods_Example_Hero.framework */; };
 /* End PBXBuildFile section */
@@ -25,6 +27,8 @@
 		7838AC1EE203488415549D3B /* Pods-Example Hero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example Hero.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example Hero/Pods-Example Hero.debug.xcconfig"; sourceTree = "<group>"; };
 		92C234D320E3C1AC00BB8FC2 /* SmallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCell.swift; sourceTree = "<group>"; };
 		92C234D620E3C27500BB8FC2 /* SmallCellTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCellTableViewController.swift; sourceTree = "<group>"; };
+		92E9DDC220E4745400E7F9C3 /* ModalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailViewController.swift; sourceTree = "<group>"; };
+		92E9DDC420E4766D00E7F9C3 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		92F4D91B20E35FEA008CECF7 /* Example Hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example Hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F4D91E20E35FEA008CECF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92F4D92320E35FEA008CECF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,7 +37,7 @@
 		92F4D92A20E35FEC008CECF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92F4D93420E36272008CECF7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		92F4D93620E36DA7008CECF7 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
-		92F4D93820E3757F008CECF7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		92F4D93820E3757F008CECF7 /* PushDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushDetailViewController.swift; sourceTree = "<group>"; };
 		92F4D93A20E37623008CECF7 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		E0EB84C1D8517D7782B74CCC /* Pods-Example Hero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example Hero.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example Hero/Pods-Example Hero.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92E9DDC620E4768D00E7F9C3 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				92E9DDC420E4766D00E7F9C3 /* UIImage+Extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		92F4D91220E35FEA008CECF7 = {
 			isa = PBXGroup;
 			children = (
@@ -71,11 +83,13 @@
 		92F4D91D20E35FEA008CECF7 /* Example Hero */ = {
 			isa = PBXGroup;
 			children = (
+				92E9DDC620E4768D00E7F9C3 /* extension */,
 				92F4D93320E3620D008CECF7 /* supporting files */,
 				92F4D93220E361F6008CECF7 /* model */,
 				92F4D93120E361F3008CECF7 /* view */,
 				92F4D93020E361EE008CECF7 /* controller */,
 				92F4D92A20E35FEC008CECF7 /* Info.plist */,
+				92F4D93A20E37623008CECF7 /* NavigationController.swift */,
 			);
 			path = "Example Hero";
 			sourceTree = "<group>";
@@ -83,10 +97,10 @@
 		92F4D93020E361EE008CECF7 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				92F4D93A20E37623008CECF7 /* NavigationController.swift */,
 				92F4D93420E36272008CECF7 /* TableViewController.swift */,
-				92F4D93820E3757F008CECF7 /* DetailViewController.swift */,
+				92F4D93820E3757F008CECF7 /* PushDetailViewController.swift */,
 				92C234D620E3C27500BB8FC2 /* SmallCellTableViewController.swift */,
+				92E9DDC220E4745400E7F9C3 /* ModalDetailViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -248,12 +262,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				92F4D91F20E35FEA008CECF7 /* AppDelegate.swift in Sources */,
+				92E9DDC320E4745400E7F9C3 /* ModalDetailViewController.swift in Sources */,
 				92F4D93520E36272008CECF7 /* TableViewController.swift in Sources */,
+				92E9DDC520E4766D00E7F9C3 /* UIImage+Extension.swift in Sources */,
 				92F4D93B20E37623008CECF7 /* NavigationController.swift in Sources */,
 				92C234D420E3C1AC00BB8FC2 /* SmallCell.swift in Sources */,
 				92F4D93720E36DA7008CECF7 /* MyTableViewCell.swift in Sources */,
 				92C234D720E3C27500BB8FC2 /* SmallCellTableViewController.swift in Sources */,
-				92F4D93920E3757F008CECF7 /* DetailViewController.swift in Sources */,
+				92F4D93920E3757F008CECF7 /* PushDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

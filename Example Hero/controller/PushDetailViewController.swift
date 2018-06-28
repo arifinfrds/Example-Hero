@@ -9,7 +9,7 @@
 import UIKit
 import Hero
 
-class DetailViewController: UIViewController {
+class PushDetailViewController: UIViewController {
     
     @IBOutlet weak var headerImageView: UIImageView!
     @IBOutlet weak var titlelabel: UILabel!

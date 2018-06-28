@@ -125,7 +125,7 @@
                                     <outlet property="subtitleLabel" destination="df6-Wh-Za3" id="eDm-Ka-OdH"/>
                                     <outlet property="thumbnailImageView" destination="t2V-5N-AuE" id="ZPs-3k-OrY"/>
                                     <outlet property="titleLabel" destination="EvO-Tw-SRT" id="hdy-yG-aKf"/>
-                                    <segue destination="gXC-1o-6X4" kind="show" id="lws-ud-SWI"/>
+                                    <segue destination="RRl-Jz-tr6" kind="presentation" id="c4L-4D-87E"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -140,10 +140,10 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="797.45127436281871"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Push Detail View Controller-->
         <scene sceneID="WuE-9N-aXC">
             <objects>
-                <viewController id="gXC-1o-6X4" customClass="DetailViewController" customModule="Example_Hero" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gXC-1o-6X4" customClass="PushDetailViewController" customModule="Example_Hero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="39l-3V-uRo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mAH-Dd-MlI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1464.8" y="108.39580209895054"/>
+            <point key="canvasLocation" x="1478" y="109"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="l7R-Wh-VKv">
@@ -220,11 +220,95 @@
             </objects>
             <point key="canvasLocation" x="25" y="798"/>
         </scene>
+        <!--Modal Detail View Controller-->
+        <scene sceneID="lEd-wK-hRA">
+            <objects>
+                <viewController id="RRl-Jz-tr6" customClass="ModalDetailViewController" customModule="Example_Hero" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Xr-Od-Wx5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountain-2143877_960_720" translatesAutoresizingMaskIntoConstraints="NO" id="vkg-Vf-LPE">
+                                <rect key="frame" x="0.0" y="-42" width="375" height="342"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="342" id="E02-ep-LRo"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZd-wa-u4C">
+                                <rect key="frame" x="16" y="20" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="OgA-zD-EjC"/>
+                                    <constraint firstAttribute="width" constant="36" id="ntU-Xg-1Kf"/>
+                                </constraints>
+                                <state key="normal" image="icons8-multiply-50">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="close" destination="RRl-Jz-tr6" eventType="touchUpInside" id="zu9-Aw-EL2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mountain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gd-Q1-1fV">
+                                <rect key="frame" x="16" y="308" width="343" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="T2V-FS-1rB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="djn-MX-9G2">
+                                <rect key="frame" x="16" y="348" width="343" height="299"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vkg-Vf-LPE" firstAttribute="trailing" secondItem="2qi-of-K78" secondAttribute="trailing" id="9XY-kj-aqt"/>
+                            <constraint firstItem="4Gd-Q1-1fV" firstAttribute="leading" secondItem="2qi-of-K78" secondAttribute="leading" constant="16" id="AMk-Zh-fna"/>
+                            <constraint firstItem="2qi-of-K78" firstAttribute="bottom" secondItem="djn-MX-9G2" secondAttribute="bottom" constant="20" id="C4a-6B-7su"/>
+                            <constraint firstItem="djn-MX-9G2" firstAttribute="top" secondItem="4Gd-Q1-1fV" secondAttribute="bottom" constant="8" id="CrG-Ym-MFu"/>
+                            <constraint firstItem="djn-MX-9G2" firstAttribute="leading" secondItem="2qi-of-K78" secondAttribute="leading" constant="16" id="MLf-kW-7El"/>
+                            <constraint firstItem="vkg-Vf-LPE" firstAttribute="top" secondItem="2qi-of-K78" secondAttribute="top" constant="-62" id="azG-1R-VXh"/>
+                            <constraint firstItem="vkg-Vf-LPE" firstAttribute="leading" secondItem="2qi-of-K78" secondAttribute="leading" id="c20-14-xuh"/>
+                            <constraint firstItem="MZd-wa-u4C" firstAttribute="leading" secondItem="2qi-of-K78" secondAttribute="leading" constant="16" id="i8i-Ta-3a5"/>
+                            <constraint firstItem="MZd-wa-u4C" firstAttribute="top" secondItem="2qi-of-K78" secondAttribute="top" id="oxl-hj-Xii"/>
+                            <constraint firstItem="2qi-of-K78" firstAttribute="trailing" secondItem="djn-MX-9G2" secondAttribute="trailing" constant="16" id="ryV-uq-TCf"/>
+                            <constraint firstItem="2qi-of-K78" firstAttribute="trailing" secondItem="4Gd-Q1-1fV" secondAttribute="trailing" constant="16" id="wfd-VG-2f8"/>
+                            <constraint firstItem="4Gd-Q1-1fV" firstAttribute="top" secondItem="vkg-Vf-LPE" secondAttribute="bottom" constant="8" symbolic="YES" id="xiD-Vq-1pR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2qi-of-K78"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="MZd-wa-u4C" id="N8g-kR-H0U"/>
+                        <outlet property="headerImageView" destination="vkg-Vf-LPE" id="yLL-2l-3B8"/>
+                        <outlet property="titlelabel" destination="4Gd-Q1-1fV" id="Ezk-AG-foE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ezV-du-hZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1477.5999999999999" y="796.55172413793105"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mgm-lJ-dmg">
+            <objects>
+                <viewController id="Vyv-pO-KZU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RaX-r8-w5H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fGH-o1-Akl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfK-Zm-ARD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2108" y="797"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="icons8-multiply-50" width="50" height="50"/>
         <image name="mountain-2143877_960_720" width="960" height="640"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="lws-ud-SWI"/>
-    </inferredMetricsTieBreakers>
 </document>
